@@ -28,7 +28,7 @@ export default function Home() {
     <main>
       <div className="relative flex h-full w-full flex-col items-center justify-center pt-36">
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] bg-[size:4rem_4rem]"></div>
-        <div className="h-fit" ref={ref}>
+        <div className="max-sm:h-" ref={ref}>
           <p className="text-center">Run Your Agency in one place</p>
           <motion.div
             style={{
@@ -42,7 +42,7 @@ export default function Home() {
             style={{
               y: imageY,
             }}
-            className="relative flex w-full items-center justify-center md:mt-[-70px]"
+            className="relative mt-[-25px] flex w-full items-center justify-center md:mt-[-70px]"
           >
             <Image
               src={"/assests/preview.png"}
@@ -53,7 +53,7 @@ export default function Home() {
             ></Image>
           </motion.div>
         </div>
-        <section className="mt-[-60px] flex flex-col items-center justify-center gap-4 md:!mt-20">
+        <section className="max-md:mt-[-60px] flex flex-col items-center justify-center gap-4 !mt-[60px]">
           <h1 className="text-center text-4xl font-semibold">
             Choose what fits you right
           </h1>
